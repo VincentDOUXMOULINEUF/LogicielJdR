@@ -1,0 +1,26 @@
+/* IMPORT FONTS */
+
+@font-face {
+	font-family: "quentin";
+	src : url('../../fonts/QUENCRG_.TTF');
+}
+
+/* INDEX */
+
+.donjimage {
+	background: url('../../images/donj/index/dnd_index_2.jpg') no-repeat center center scroll;
+	width: 100%;
+	height : 600px;
+	
+}
+
+.donjimage h1 {
+	font-family: quentin;
+	color: #FFF;	
+}
+
+.cthulhuimage {
+	background: url('../../images/cthulhu/index/coc_index_2.jpg') no-repeat center center scroll;
+	width: 100%;
+	height: 750px; 
+}

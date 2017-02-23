@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<!-- <meta charset="UTF-8"> -->
+		<title>Logiciel de feuille de personnages de JdR</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/app/main.css}"/>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap/bootstrap-theme.css}"/>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap/bootstrap-theme.min.css}"/>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap/bootstrap.css}"/>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap/bootstrap.min.css}"/>
+	</head>
+	<body>
+		<div class="container">
+			<div th:include="/fragment/greetings_header :: toto"></div>
+			<div th:include="/fragment/greetings_header :: tata"></div>
+	
+			<h1>Toto vient d'arriver à faire ce qu'il voulait à la fin ^^</h1>
+			<p>Allez l'OM</p>
+		
+			<p>Je suis hors de la div</p>
+			<div class="seedstarterlist" th:unless="${#lists.isEmpty(liste)}">
+				<p> Je suis dans la div </p>
+				<div th:each="greeting : ${liste}">
+					<p th:text="${greeting.id}"></p>
+					<p th:text="${greeting.text}"></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
