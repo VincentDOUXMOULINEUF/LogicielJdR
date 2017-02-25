@@ -3,7 +3,6 @@
 <head>
 <title>LogicielJdR - Logiciel de feuille de personnages de JdR</title>
 <link rel="shortcut icon" th:href="@{/images/favicon.ico}" />
-<link rel="stylesheet" type="text/css" th:href="@{/css/app/main.css}" />
 <link rel="stylesheet" type="text/css"
 	th:href="@{/css/bootstrap/bootstrap-theme.css}" />
 <link rel="stylesheet" type="text/css"
@@ -12,37 +11,78 @@
 	th:href="@{/css/bootstrap/bootstrap.css}" />
 <link rel="stylesheet" type="text/css"
 	th:href="@{/css/bootstrap/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/app/main.css}" />
 </head>
 <body id="page-top" class="index">
 	<!-- nav bar -->
-	<nav class="navbar ">
-		<div class="container">
-			<div class="navbar-header page-scroll">
+	<nav class="navbar navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="nav-header">
 				<a class="navbar-brand" href="#page-top">Logiciel JdR</a>
 			</div>
-			<div class="">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="hidden"><a href="#page-top"></a></li>
-					<li class="page-scroll"><a href="#donjonetdragon">Donjon
-							et Dragon</a></li>
-					<li class="page-scroll"><a href="#appeldecthulhu">Appel de
-							Cthulhu</a></li>
-					<li class="page-scroll"><a href="#vampire">Vampire</a></li>
-				</ul>
-			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#a-propos">A Propos</a></li>
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="">Jeux <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Pathfinder</a></li>
+						<li><a href="#">L'Appel de Cthulhu</a></li>
+						<li><a href="#">Vampire - Mascarade</a></li>
+					</ul></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/inscription"><span
+						class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li><a href="/login"><span
+						class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
 		</div>
 	</nav>
 
 	<!-- Description de l'application -->
-	<header class="header"> 
-		<div class="text-vertical-center">
-			<h1>Logiciel JdR</h1>
+	<header class="header">
+		<div class="row main-title-container">
+			<div class="col-md-12">
+				<div>
+					<h1>Logiciel JdR</h1>
+					<p>Un logiciel, qu'il est facile à utiliser</p>
+				</div>
+			</div>
 		</div>
 	</header>
 
 	<div class="separator"></div>
 
 	<!-- Les jeux supportés -->
+	<section id="a-propos">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 item-border">
+					<h1>La présentation de jeux de rôles</h1>
+				</div>
+				<div class="col-md-3 item-border">
+					<h1>La création de fiches de personnages</h1>
+				</div>
+				<div class="col-md-3 item-border">
+					<h1>L'impression des fiches de personnages</h1>
+				</div>
+				<div class="col-md-3 item-border">
+					<h1>Et bien d'autres choses ...</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<!-- Les jeux supportés -->
+
+
+
+
 	<section class="testSection">
 		<div class="container">
 			<div class="row">
@@ -106,6 +146,7 @@
 		</div>
 	</section>
 
+	<div th:include="/fragment/footer :: index"></div>
 
 
 </body>

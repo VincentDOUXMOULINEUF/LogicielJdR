@@ -4,50 +4,96 @@
 	font-family: "quentin";
 	src : url('../../fonts/QUENCRG_.TTF');
 }
+@font-face {
+	font-family: "gidolina";
+	src : url('../../fonts/Gidolinya-Regular.otf');
+}
 
-/* GENERAL */
+/* ------------
+    GENERAL  
+---------------*/
 html, body {
 	width: 100%;
     height: 100%;
 }
+
+p, h1, h3, h6, a {
+	font-family: gidolina;
+}
+
+nav, footer {
+	background-color: #401C18;
+}
+
+footer {
+	height: 15%;
+	width: 100%;
+}
+
+/* -------------
+      INDEX
+ ---------------*/
  
+ 
+/* Nav */
 
-/* INDEX */
-
-.text-vertical-center h1 {
-	display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+nav a, nav a:hover {
+	color: #fff;
 }
 
-.donjimage {
-	background: url('../../images/donj/index/dnd_index_2.jpg') no-repeat center center scroll;
-	width: 100%;
-	height : 600px;
-	
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: #401C18;
 }
 
-.donjimage h1 {
-	font-family: quentin;
-}
 
-.cthulhuimage {
-	background: url('../../images/cthulhu/index/coc_index_2.jpg') no-repeat center center scroll;
-	width: 100%;
-	height: 750px; 
-}
-
-.testSection {
-	background-color: aqua;
-}
-
-.testVign {
-	background-color: #fff;
-}
-
+/* Header */
 .header {
 	height: 100%;
 	background: url('../../images/index_pres_2.jpg') no-repeat;
 	width: 100%;
-	
+	display: table;
+	position: relative;
+}
+
+.main-title-container {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.main-title-container h1, p {
+	color: #fff;
+}
+
+.main-title-container h1 {
+	font-size: 4.5em;
+	font-weight: 800;
+	font-family: gidolina;
+}
+
+.main-title-container p {
+	font-size: 1em;
+	font-weight: 200;
+}
+
+/* Section A Propos */
+#a-propos {
+	height: 25%;
+	background-color: gray;
+}
+
+
+
+/* Footer */
+
+.footer {
+	display: table;
+	position: relative;
+}
+
+.footer-container {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
 }
