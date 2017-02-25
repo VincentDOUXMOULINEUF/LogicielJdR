@@ -12,8 +12,14 @@
 <link rel="stylesheet" type="text/css"
 	th:href="@{/css/bootstrap/bootstrap.min.css}" />
 <link rel="stylesheet" type="text/css" th:href="@{/css/app/main.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/app/login.css}" />
 </head>
 <body>
-	<h1>page Inscription</h1>
+	<form action="/inscription" method="post">
+		<div class="container">
+			<h1>Formulaire Inscription</h1>
+		</div>
+	</form>
+	<div th:include="/fragment/footer :: index"></div>
 </body>
 </html>

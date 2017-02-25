@@ -1,0 +1,17 @@
+body {
+/* 	background-color: #401C18; */
+	background-image: url('../../images/login/dragon_index.png');
+}
+
+.footer {
+	position: fixed;
+	display: table;
+}
+
+form {
+	position: relative;
+	text-align: center;
+	color: #fff;
+	height: 90%
+}
+

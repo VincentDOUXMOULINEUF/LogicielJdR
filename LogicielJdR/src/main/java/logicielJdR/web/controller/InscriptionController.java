@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
+@RequestMapping(value = "/inscription")
 public class InscriptionController {
 	
 	private final String INSCRIPTION_VIEW = "inscription";
 	
-	@RequestMapping(value = "/inscription", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView inscription() {
 		return new ModelAndView(INSCRIPTION_VIEW);
 	}
