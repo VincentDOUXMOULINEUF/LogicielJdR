@@ -1,6 +1,10 @@
 body {
-/* 	background-color: #401C18; */
-	background-image: url('../../images/login/dragon_index.png');
+	background-color: #401C18;
+}
+
+.dragon-image {
+	background: url('../../images/dragon_index_2.jpg') no-repeat;
+/* 	background: url('../../images/index_pres_2.jpg') no-repeat; */
 }
 
 .footer {
