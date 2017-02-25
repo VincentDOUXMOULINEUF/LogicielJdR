@@ -1,15 +1,17 @@
-body {
+html {
 	background-color: #401C18;
 }
 
-.dragon-image {
-	background: url('../../images/dragon_index_2.jpg') no-repeat;
-/* 	background: url('../../images/index_pres_2.jpg') no-repeat; */
+body {
+	background: url('../../images/dragon_login.png') no-repeat ;
+	background-size: 75%;
+    background-position: left bottom;
 }
 
 .footer {
 	position: fixed;
 	display: table;
+	background-color: transparent;
 }
 
 form {
